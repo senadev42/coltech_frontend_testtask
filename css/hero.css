@@ -1,0 +1,123 @@
+@font-face {
+  font-family: "Bebas-Regular";
+  src: url("../assets/fonts/bebas/Bebas-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Avrile-Sans-ExtraBold-Italic";
+  src: url("../assets/fonts/Avrile-Sans-ExtraBold-Italic/AvrileSans-BoldItalic.ttf");
+}
+
+/* the left image */
+.hero-logo {
+  position: absolute;
+  top: 1%;
+  left: 20%;
+  margin: auto;
+  z-index: 3;
+}
+
+/* the right logo */
+.hero-navbar {
+  position: absolute;
+  top: 1%;
+  right: 20%;
+  margin: auto;
+  z-index: 10;
+}
+
+@media (max-width: 767px) {
+    .hero-logo,
+    .hero-navbar {
+      display: none;
+    }
+  }
+
+.hero-navbar ul {
+  display: flex;
+  flex-direction: row;
+  font-family: "Avrile-Sans-ExtraBold-Italic";
+  list-style: none;
+}
+
+.hero-navbar ul li a {
+  color: white;
+  text-decoration: underline;
+  font-size: smaller;
+  text-underline-offset: 5px;
+}
+
+/* The Image */
+.img-fluid {
+  width: 100%; /* or specify an exact width in pixels */
+  height: auto;
+}
+
+.image-container {
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.background-image {
+  z-index: -1;
+  width: 100vw;
+}
+
+.cutout-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 3;
+  width: 99vw;
+  filter: brightness(110%) grayscale(10%);
+}
+
+.speck-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 4;
+  width: 99vw;
+
+
+}
+
+/* The LA Text */
+/* The text */
+.centered-hero-text {
+  position: absolute;
+  top: 26%;
+  left: 44%;
+  transform: translateX(-50%);
+  z-index: 2;
+  font-family: "Bebas-Regular", sans-serif;
+  font-size: 9.5vw;
+}
+
+.centered-hero-text span {
+  display: block;
+  width: 100%;
+  margin: 0; /* Set margin to 0 */
+  padding: 0; /* Set padding to 0 */
+  line-height: 0.8;
+}
+
+.centered-hero-text span:first-child {
+  color: #4d4d4d;
+}
+
+.centered-hero-text span:last-child {
+  color: #414f6b;
+  letter-spacing: 0.04em;
+}
+
+

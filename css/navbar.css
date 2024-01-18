@@ -1,0 +1,107 @@
+@font-face {
+  font-family: "Bebas-Regular";
+  src: url("../assets/fonts/bebas/Bebas-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Avrile-Sans-ExtraBold-Italic";
+  src: url("../assets/fonts/Avrile-Sans-ExtraBold-Italic/AvrileSans-Italic.ttf");
+}
+
+/* Logo Container */
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-between;
+  margin-left: 20vh;
+  margin-top: 10px;
+}
+
+@media (max-width: 992px) {
+  .logo-container {
+    margin-left: 5vh;
+  }
+}
+
+
+@media (max-width: 400px) {
+    .logo-container h4 {
+      display: none;
+    }
+
+    .logo-container {
+        margin-left: 0;
+        margin-top: 5px;
+      }
+
+
+  }
+
+/* the image */
+.logo-container img {
+  margin-right: 0.5rem;
+}
+
+/* The image */
+.nav-logo {
+  border: 1px solid grey;
+  border-radius: 50%;
+  width: 2.7rem;
+}
+
+/* the text */
+.navbar-logo-text {
+  font-family: "Bebas-Regular", sans-serif;
+  font-size: 1.5rem;
+}
+
+.navbar-logo-text span {
+  display: block;
+  line-height: 0.8;
+  width: 100%;
+}
+
+.navbar-logo-text span:first-child {
+  color: #4d4d4d;
+}
+
+.navbar-logo-text span:last-child {
+  color: #414f6b;
+  letter-spacing: 0.04em;
+}
+
+/* The actual navbar */
+
+.history-navbar ul {
+  display: flex;
+  flex-direction: row;
+  font-family: "Avrile-Sans-ExtraBold-Italic";
+  list-style: none;
+}
+
+.history-navbar ul li {
+  margin-right: 2rem;
+}
+
+.history-navbar ul li a {
+  color: white;
+  text-decoration: underline;
+  font-size: smaller;
+  text-underline-offset: 5px;
+}
+
+@media (max-width: 992px) {
+  .history-navbar ul {
+    align-items: end;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .history-navbar ul li {
+    margin-right: 0;
+  }
+}
+

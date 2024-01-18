@@ -1,0 +1,106 @@
+@font-face {
+  font-family: "Oswald-Bold";
+  src: url("../assets/fonts/Oswald/static/Oswald-SemiBold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+#history {
+  height: 120vh;
+
+  background-image: url("../assets/1/Bg/peak.PNG");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  filter: hue-rotate(25deg);
+}
+
+.history-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: green;
+}
+/* The copy text */
+
+.content-copytext {
+}
+
+.content-copytext h2 {
+  font-family: "Oswald-Bold";
+  opacity: 0.5;
+  font-size: 8rem;
+}
+
+.content-copytext .title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.content-copytext h3 {
+  font-family: "Oswald-Bold";
+  opacity: 0.7;
+  margin-left: -25px;
+  margin-bottom: -20px;
+}
+
+.content-copytext p {
+  margin-left: 3rem;
+}
+
+@media (max-width: 550px) {
+  .content-copytext p {
+    margin-left: auto;
+  }
+}
+
+/* The Carousel */
+.carousel-container {
+  /* Adjust margin as needed */
+  background-color: rgba(56, 97, 123, 0.5);
+
+  padding: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.carousel-container div {
+    margin-bottom: 5px;
+}
+
+.carousel-inner div {
+  width: 14rem;
+}
+
+.carousel-img {
+  width: 100%;
+}
+
+.carousel-indicators {
+  margin-top: 13rem;
+}
+
+
+/* 2. CLIMB */
+
+.climb-container {
+   
+}
+
+.climb-copytext {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end
+}
+
+#team {
+    background-color: white;
+    height: 120vh;
+}
+

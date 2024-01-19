@@ -14,7 +14,6 @@
 
     <link rel="stylesheet" href="./css/multi-carousel.css" />
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 </head>
 
@@ -79,7 +78,7 @@
         </div>
     </nav>
 
-    <!-- First content section -->
+    <!-- History content section -->
     <main>
         <div class="container-fluid history-container" id="history">
 
@@ -149,57 +148,184 @@
         </div>
     </main>
 
-    <main id="team">
-        <!-- Second content section with climb -->
+    <!-- Climb section with climb -->
+    <main id="climb">
 
         <div class="container">
             <div class="row content-copytext climb-container">
-                <div class="climb-copytext col-sm-12 col-md-10 col-lg-10 mx-auto">
-                    <div class="col-sm-2 col-md-2 col-lg-2  mt-5">
+                <div class="climb-copytext col-sm-12 col-md-12 col-lg-10 mx-auto d-flex flex-column flex-sm-row ">
+                    <!-- the big text -->
+                    <div class="col-sm-2 col-md-2 col-lg-2 mt-1 mr-sm-5">
                         <div class="title">
                             <h2>02.</h2>
                             <h3> CLIMB</h3>
                         </div>
                     </div>
-                    <div class="col-sm-10 col-md-10 col-lg-8 mx-auto mt-5">
+                    <!-- the small text -->
+                    <div class="col-sm-10 col-md-10 col-lg-8 mx-auto ml-sm-5">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                             ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                            ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            labore et dolore magna aliqua. </p>
                     </div>
                 </div>
             </div>
         </div>
 
+
+        <div class="container-fluid">
+
+            <!-- the actual tabs -->
+            <div class="row mountain-tab-row">
+                <div class="col-md-12 col-lg-8 mx-auto">
+                    <ul class="nav nav-tabs" id="mountaintabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="tab1-tab" data-toggle="tab" href="#tab1">Mountain 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="tab2-tab" data-toggle="tab" href="#tab2">Mountain 2</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <!-- tab content -->
+            <div class="row mountain-content-row active-tab1">
+                <div class="col-8 mx-auto">
+                    <div class="tab-content mt-2">
+                        <div class="tab-pane fade show active" id="tab1">
+
+                            <!-- mountain 1 schedule -->
+                            <div class="row schedule-row">
+                                <div class="col-sm-12 col-md-12 col-lg-6 schedule-box">
+                                    <div class="row">
+                                        <div class="col schedule-title">
+                                            <h2>SCHEDULE</h2>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-7">
+                                            <p>13 Dec 2016</p>
+                                        </div>
+                                        <div class="col-5">
+                                            <p>Vestibulum Viverra</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-7">
+                                            <p>28 Dec 2016</p>
+                                        </div>
+                                        <div class="col-5">
+                                            <p>Vestibulum Viverra</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-2">
+                                        <div class="col-7">
+                                            <p>9 Feb 2017</p>
+                                        </div>
+                                        <div class="col-5">
+                                            <p>Vestibulum Viverra</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-2">
+                                        <div class="col-7">
+                                            <p>25 Nov 2016</p>
+                                        </div>
+                                        <div class="col-5">
+                                            <p>Vestibulum Viverra</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab2">
+      <!-- mountain 1 schedule -->
+      <div class="row schedule-row">
+        <div class="col-sm-12 col-md-12 col-lg-6 schedule-box">
+            <div class="row">
+                <div class="col schedule-title">
+                    <h2>SCHEDULE</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-7">
+                    <p>13 Dec 2016</p>
+                </div>
+                <div class="col-5">
+                    <p>Vestibulum Viverra</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-7">
+                    <p>28 Dec 2016</p>
+                </div>
+                <div class="col-5">
+                    <p>Vestibulum Viverra</p>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-7">
+                    <p>9 Feb 2017</p>
+                </div>
+                <div class="col-5">
+                    <p>Vestibulum Viverra</p>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-7">
+                    <p>25 Nov 2016</p>
+                </div>
+                <div class="col-5">
+                    <p>Vestibulum Viverra</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
     </main>
 
-    <!-- Bottom section with schedule -->
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <h2>SCHEDULE</h2>
+    <!-- footer -->
+    <div class="container-fluid footer">
+        <footer>
+            <div class="row">
+                <div class="col-md-12 col-lg-10 mx-auto py-2 footer-box">
+                    <div class="col-4 footer-logo d-flex align-items-center">
+                        <img src="./assets/Hero/Logo.PNG" class="nav-logo mr-2" alt="Logo">
+                        <h4>
+                            <span>LOSANGELES</span>
+                            <span>MOUNTAINS</span>
+                        </h4>
+                    </div>
+
+                    <div class="col-6 copyright">
+                        <p class=" text-md-right">
+                            COPYRIGHT 2016. ALL RIGHTS RESERVED.
+                        </p>
+                    </div>
+                </div>
+
             </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <h3>MOUNTAIN 1</h3>
-                <p>23/11 Sunny -5°C</p>
-            </div>
-            <div class="col">
-                <h3>MOUNTAIN 2</h3>
-                <p>24/11 Snowy -10°C</p>
-            </div>
-            <div class="col">
-                <h3>MOUNTAIN 3</h3>
-                <p>25/11 Windy -15°C</p>
-            </div>
-        </div>
+        </footer>
     </div>
-    <!-- Link to Bootstrap CDN -->
+
+
+
+    <!-- script CDNs -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+    <!--  Sticky Nav Bar Script  -->
     <script>
         $(document).ready(function () {
             var navbar = $("#sticky-nav-bar");
@@ -217,11 +343,9 @@
         });
     </script>
 
+    <!--  Carousel Script  -->
     <script>
         $('#carousel-example').on('slide.bs.carousel', function (e) {
-            /*
-                CC 2.0 License Iatek LLC 2018 - Attribution required
-            */
             var $e = $(e.relatedTarget);
             var idx = $e.index();
             var itemsPerSlide = 5;
@@ -239,6 +363,22 @@
                     }
                 }
             }
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            // Add an event listener for tab changes
+            $('#mountaintabs a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+                // Get the active tab's ID
+                var activeTabId = $(e.target).attr('href').substr(1);
+
+                // Remove existing active classes
+                $('.mountain-content-row').removeClass('active-tab1 active-tab2');
+
+                // Add the active class based on the active tab
+                $('.mountain-content-row').addClass('active-' + activeTabId);
+            });
         });
     </script>
 

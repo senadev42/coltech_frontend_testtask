@@ -5,6 +5,18 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Bebas-Regular";
+  src: url("../assets/fonts/bebas/Bebas-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Avrile-Sans-ExtraBold-Italic";
+  src: url("../assets/fonts/Avrile-Sans-ExtraBold-Italic/AvrileSans-BoldItalic.ttf");
+}
+
 #history {
   height: 120vh;
 
@@ -70,7 +82,7 @@
 }
 
 .carousel-container div {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .carousel-inner div {
@@ -85,22 +97,172 @@
   margin-top: 13rem;
 }
 
-
 /* 2. CLIMB */
 
-.climb-container {
-   
-}
-
 .climb-copytext {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: end
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
-#team {
-    background-color: white;
-    height: 120vh;
+#climb {
+  background-color: white;
+  /* height: 100vh; */
 }
 
+#climb .title {
+  color: #414f6b;
+}
+
+/* The Tabs */
+
+.mountain-tab-row {
+  background-color: #414f6b;
+  height: 2.5rem;
+}
+
+.nav-tabs .nav-link {
+  border: none;
+  border-radius: 0%;
+}
+
+#mountaintabs {
+  color: #b0b4be;
+  font-family: "Bebas-Regular";
+  font-size: larger;
+  border: none;
+  height: 100%;
+}
+
+#mountaintabs .nav-item {
+  height: 100%;
+}
+
+#mountaintabs a {
+  background-color: #414f6b;
+  color: #b0b4be;
+  font-size: 1.5rem;
+  line-height: 0.9;
+  height: 100%;
+}
+
+#mountaintabs .active {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  color: #414f6b;
+  background-color: #b0b4be;
+}
+
+/* the content */
+
+.mountain-content-row {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+
+  height: 80vh;
+}
+
+
+@media (max-width: 668px) {
+    .mountain-content-row {
+        height: 70vh;
+    }
+  }
+
+.mountain-content-row.active-tab1 {
+  background-image: url("../assets/TabContent/tab1_image.PNG");
+}
+
+.mountain-content-row.active-tab2 {
+  background-image: url("../assets/TabContent/tab2_image.PNG");
+}
+
+/* climb copytext */
+
+.schedule-row {
+  margin-top: 10rem;
+}
+
+@media (max-width: 1500px) {
+  .schedule-row {
+    margin-top: 5rem;
+  }
+}
+
+@media (max-width: 550px) {
+    .schedule-row {
+      margin-top: 2rem;
+    }
+  }
+
+.schedule-box {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.schedule-title {
+  font-family: "Bebas-Regular", sans-serif;
+  font-size: 1.5rem;
+}
+
+.schedule-box .row {
+  margin: 0;
+}
+
+/* THE FOOTER */
+
+.footer {
+  background-color: #414f6b;
+}
+
+.footer-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo img {
+  width: 2.5rem;
+  background-color: #5d6f94;
+  opacity: 0.6;
+}
+
+.footer-logo h4 {
+  color: #5d6f94;
+  font-family: "Bebas-Regular", sans-serif;
+  font-size: 1.5rem;
+  line-height: 0.8;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo span:last-child {
+  letter-spacing: 0.04em;
+}
+
+.copyright {
+  font-family: "Avrile-Sans-ExtraBold-Italic", sans-serif;
+  font-size: 0.8em;
+  color: #5d6f94;
+  font-weight: 100;
+
+  /*centering it  */
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  height: 100%;
+}
+
+.copyright p {
+  margin: 0;
+}
+
+
+@media (max-width: 550px) {
+    .copyright p {
+      font-size: x-small;
+    }
+  }

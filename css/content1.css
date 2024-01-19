@@ -17,7 +17,8 @@
   src: url("../assets/fonts/Avrile-Sans-ExtraBold-Italic/AvrileSans-BoldItalic.ttf");
 }
 
-#history {
+
+#history-div {
   height: 120vh;
 
   background-image: url("../assets/1/Bg/peak.PNG");

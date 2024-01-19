@@ -6,20 +6,36 @@
     <title>Los Angeles Mountains</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/hero.css" />
     <link rel="stylesheet" href="./css/navbar.css" />
     <link rel="stylesheet" href="./css/content1.css" />
-
     <link rel="stylesheet" href="./css/multi-carousel.css" />
 
+    <!-- Meta Tags -->
+    <meta name="description" content="Explore the beauty, history, and climbing adventures of the Los Angeles Mountains.">
+    <meta name="keywords" content="Los Angeles, mountains, climbing, history, adventure">
+    <meta name="author" content="Los Angeles">
+
+    <!-- OpenGraph Content -->
+    <meta property="og:title" content="Los Angeles Mountains">
+    <meta property="og:description" content="Explore the beauty, history, and climbing adventures of the Los Angeles Mountains.">
+    <meta property="og:image" content="https://example.com/og-image.jpg">
+    <meta property="og:url" content="https://example.com">
+    <meta property="og:type" content="website">
 
 </head>
 
 <body>
     <!-- Top section with image and title -->
-    <div class="">
+    <div id="herosection">
         <div class="row align-items-center">
 
             <div class=" hero-logo">
@@ -32,7 +48,7 @@
                         <a class="nav-link" href="#history">01. HISTORY</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#team">02. TEAM</a>
+                        <a class="nav-link" href="#climb">02. TEAM</a>
                     </li>
                 </ul>
             </div>
@@ -50,7 +66,7 @@
     </div>
 
     <!-- Navigation bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="sticky-nav-bar">
+    <nav class="sticky-wt-navbar navbar navbar-expand-lg navbar-light bg-light" id="sticky-nav-bar">
         <div class="container">
             <div class="logo-container">
                 <img src="./assets/Hero/Logo.PNG" class="nav-logo">
@@ -68,10 +84,10 @@
             <div class="collapse navbar-collapse history-navbar" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">01. HISTORY</a>
+                        <a class="nav-link" href="#history">01. HISTORY</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">02. TEAM</a>
+                        <a class="nav-link" href="#climb">02. TEAM</a>
                     </li>
                 </ul>
             </div>
@@ -79,11 +95,11 @@
     </nav>
 
     <!-- History content section -->
-    <main>
-        <div class="container-fluid history-container" id="history">
+    <main  id="history" >
+        <div class="container-fluid history-container" id="history-div">
 
-            <div class="row content-copytext">
-                <div class=" col-sm-12 col-md-10 col-lg-7 mx-auto mt-5">
+            <div class="row content-copytext pt-5">
+                <div class=" col-sm-12 col-md-10 col-lg-7 mx-auto mt-2">
                     <div class="title">
                         <h2>01.</h2>
                         <h3> HISTORY</h3>
@@ -194,7 +210,6 @@
                 <div class="col-8 mx-auto">
                     <div class="tab-content mt-2">
                         <div class="tab-pane fade show active" id="tab1">
-
                             <!-- mountain 1 schedule -->
                             <div class="row schedule-row">
                                 <div class="col-sm-12 col-md-12 col-lg-6 schedule-box">
@@ -241,50 +256,50 @@
                             </div>
                         </div>
                         <div class="tab-pane fade" id="tab2">
-      <!-- mountain 1 schedule -->
-      <div class="row schedule-row">
-        <div class="col-sm-12 col-md-12 col-lg-6 schedule-box">
-            <div class="row">
-                <div class="col schedule-title">
-                    <h2>SCHEDULE</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-7">
-                    <p>13 Dec 2016</p>
-                </div>
-                <div class="col-5">
-                    <p>Vestibulum Viverra</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-7">
-                    <p>28 Dec 2016</p>
-                </div>
-                <div class="col-5">
-                    <p>Vestibulum Viverra</p>
-                </div>
-            </div>
-            <div class="row mt-2">
-                <div class="col-7">
-                    <p>9 Feb 2017</p>
-                </div>
-                <div class="col-5">
-                    <p>Vestibulum Viverra</p>
-                </div>
-            </div>
-            <div class="row mt-2">
-                <div class="col-7">
-                    <p>25 Nov 2016</p>
-                </div>
-                <div class="col-5">
-                    <p>Vestibulum Viverra</p>
-                </div>
-            </div>
+                            <!-- mountain 2 schedule -->
+                            <div class="row schedule-row">
+                                <div class="col-sm-12 col-md-12 col-lg-6 schedule-box">
+                                    <div class="row">
+                                        <div class="col schedule-title">
+                                            <h2>SCHEDULE</h2>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-7">
+                                            <p>13 Dec 2016</p>
+                                        </div>
+                                        <div class="col-5">
+                                            <p>Vestibulum Viverra</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-7">
+                                            <p>28 Dec 2016</p>
+                                        </div>
+                                        <div class="col-5">
+                                            <p>Vestibulum Viverra</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-2">
+                                        <div class="col-7">
+                                            <p>9 Feb 2017</p>
+                                        </div>
+                                        <div class="col-5">
+                                            <p>Vestibulum Viverra</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-2">
+                                        <div class="col-7">
+                                            <p>25 Nov 2016</p>
+                                        </div>
+                                        <div class="col-5">
+                                            <p>Vestibulum Viverra</p>
+                                        </div>
+                                    </div>
 
-        </div>
+                                </div>
 
-    </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -343,8 +358,8 @@
         });
     </script>
 
-    <!--  Carousel Script  -->
     <script>
+        //sourced from https://azmind.com/bootstrap-carousel-multiple-items/
         $('#carousel-example').on('slide.bs.carousel', function (e) {
             var $e = $(e.relatedTarget);
             var idx = $e.index();
@@ -354,7 +369,6 @@
             if (idx >= totalItems - (itemsPerSlide - 1)) {
                 var it = itemsPerSlide - (totalItems - idx);
                 for (var i = 0; i < it; i++) {
-                    // append slides to end
                     if (e.direction == "left") {
                         $('.carousel-item').eq(i).appendTo('.carousel-inner');
                     }
@@ -367,19 +381,37 @@
     </script>
 
     <script>
+
+        //changing background for the tabs
         $(document).ready(function () {
-            // Add an event listener for tab changes
             $('#mountaintabs a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-                // Get the active tab's ID
                 var activeTabId = $(e.target).attr('href').substr(1);
-
-                // Remove existing active classes
                 $('.mountain-content-row').removeClass('active-tab1 active-tab2');
-
-                // Add the active class based on the active tab
                 $('.mountain-content-row').addClass('active-' + activeTabId);
             });
         });
+
+
+        $(document).ready(function() {
+    
+            $('a[href^="#"]').on('click', function(event) {
+              var target = $($(this).attr('href'));
+
+              if (target.is('#tab1') || target.is('#tab2')) return;
+
+              var scrollOffset = target.is('#history') ? 0 : 70;
+          
+              if (target.length) {
+                event.preventDefault();
+                
+                //some wierd behavior if target is above the navbar look into that
+                $('html, body').animate({
+                  scrollTop: target.offset().top - ($('.sticky-wt-navbar').outerHeight() + scrollOffset)
+                }, 1000);
+              }
+            });
+          });
+          
     </script>
 
 </body>
